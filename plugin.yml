@@ -1,0 +1,11 @@
+name: AutoBroadcast
+main: zaxelmb\broadcast\Loader
+author: zAxelMB
+version: 1.0.0
+api: 5.0.0
+description: "Basic automatic messaging system"
+
+permissions:
+  autobroadcast.command:
+    description: "Manage broadcast"
+    default: op
