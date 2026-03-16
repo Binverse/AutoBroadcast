@@ -12,7 +12,7 @@ class BroadcastCommand extends Command {
     
     private $plugin;
     
-    public function __construct(Main $plugin) {
+    public function __construct(Loader $plugin) {
         parent::__construct("autobroadcast", "Gestiona AutoBroadcast", "/autobroadcast <reload|toggle|send|stats|mode>", ["ab", "broadcast"]);
         $this->setPermission("autobroadcast.command");
         $this->plugin = $plugin;
