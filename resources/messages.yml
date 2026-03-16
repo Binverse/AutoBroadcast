@@ -1,0 +1,27 @@
+# Mensajes del plugin (no broadcasts)
+
+prefix: "&8[&6AutoBroadcast&8] &r"
+
+commands:
+  reload-success: "&aConfiguración recargada exitosamente!"
+  reload-error: "&cError al recargar la configuración."
+  
+  plugin-enabled: "&aAutoBroadcast habilitado."
+  plugin-disabled: "&cAutoBroadcast deshabilitado."
+  
+  no-permission: "&cNo tienes permiso para usar este comando."
+  
+  broadcast-sent: "&aMensaje enviado manualmente: &f{message}"
+  
+  list-messages: "&eMensajes configurados: &f{count}"
+  
+  invalid-mode: "&cModo inválido. Usa: sequential, random, shuffle"
+  
+  stats:
+    - "&6&lEstadísticas de AutoBroadcast:"
+    - "&eEstado: &f{status}"
+    - "&eModo: &f{mode}"
+    - "&eIntervalo: &f{interval}s"
+    - "&eMensajes totales: &f{total}"
+    - "&eMensaje actual: &f{current}"
+    - "&eBroadcasts enviados: &f{sent}"

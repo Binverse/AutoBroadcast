@@ -1,0 +1,70 @@
+# AutoBroadcast Configuration
+
+# Configuración general
+settings:
+  enabled: true
+  
+  # Intervalo entre mensajes (en segundos)
+  interval: 180  # 3 minutos
+  
+  # Orden de los mensajes
+  mode: "sequential"  # sequential, random, shuffle
+  
+  # Prefijo de los mensajes
+  prefix: "&8[&6Anuncio&8] &r"
+  
+  # Mínimo de jugadores online para enviar broadcasts
+  minimum-players: 1
+  
+  # Enviar a todos o solo a jugadores en survival
+  send-to-all-worlds: true
+  
+  # Formato del mensaje
+  format: "broadcast"  # broadcast (todo el servidor), message (individual), title, actionbar
+
+# Lista de mensajes
+messages:
+  - "&aRecuerda votar por el servidor en &e/vote"
+  - "&bÚnete a nuestro Discord: &fdiscord.gg/tuservidor"
+  - "&eLee las reglas en &c/rules &epara evitar sanciones"
+  - "&dCompartimos tu experiencia! Usa &f/review"
+  - "&6¿Necesitas ayuda? Usa &e/ticket &6para contactar al staff"
+  - "&aCompra rangos y beneficios en &e/tienda"
+  - "&3Tip: Usa &b/sethome &3para guardar tu ubicación"
+  - "&eRecuerda respetar a todos los jugadores"
+  - "&bSíguenos en redes sociales: &f@tuservidor"
+  - "&dEvita el spam en el chat, sé respetuoso"
+
+# Mensajes especiales (opcionales)
+special-messages:
+  enabled: false
+  
+  # Mensajes que se muestran con menor frecuencia
+  rare-messages:
+    - "&6&l¡EVENTO! &eDrop Party en spawn en 30 minutos"
+    - "&c&l¡OFERTA! &e50% de descuento en rangos este fin de semana"
+  
+  # Probabilidad de mensaje especial (0-100)
+  chance: 10  # 10% de probabilidad
+
+# Broadcasts por tiempo
+timed-broadcasts:
+  enabled: false
+  
+  broadcasts:
+    restart-warning:
+      time: "23:45"  # Hora del día (24h)
+      message: "&c&lADVERTENCIA: &eReinicio del servidor en 15 minutos!"
+      days: ["monday", "wednesday", "friday"]  # all, o días específicos
+    
+    backup-info:
+      time: "04:00"
+      message: "&aRealizando backup automático del servidor..."
+      days: ["all"]
+
+# Sounds (opcional - PMMP tiene limitaciones)
+sounds:
+  enabled: false
+  sound-name: "random.orb"
+  volume: 1.0
+  pitch: 1.0
