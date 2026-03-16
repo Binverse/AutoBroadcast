@@ -9,7 +9,7 @@ use zaxelmb\autobroadcast\task\BroadcastTask;
 use zaxelmb\autobroadcast\command\BroadcastCommand;
 use zaxelmb\autobroadcast\utils\ConfigManager;
 
-class Main extends PluginBase {
+class Loader extends PluginBase {
     
     private static $instance;
     private $broadcastManager;
