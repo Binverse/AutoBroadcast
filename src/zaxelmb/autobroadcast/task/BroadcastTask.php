@@ -9,7 +9,7 @@ class BroadcastTask extends Task {
     
     private $plugin;
     
-    public function __construct(Main $plugin) {
+    public function __construct(Loader $plugin) {
         $this->plugin = $plugin;
     }
     
