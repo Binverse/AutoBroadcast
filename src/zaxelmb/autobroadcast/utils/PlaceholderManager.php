@@ -12,7 +12,7 @@ class PlaceholderManager {
     private $plugin;
     private $customPlaceholders = [];
     
-    public function __construct(Main $plugin) {
+    public function __construct(Loader $plugin) {
         $this->plugin = $plugin;
         $this->registerDefaultPlaceholders();
     }
